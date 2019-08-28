@@ -34,4 +34,4 @@ VOLUME /var/lib/docker
 EXPOSE 2375
 
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-CMD []
+CMD ["/bin/sh", "-c", "while true; do sleep 1h; done"]
